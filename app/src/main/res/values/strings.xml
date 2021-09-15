@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="location">Thane</string>
+    <string name="date"> Tuesday, January 8, 2021</string>
+    <string name="temp"> 26°</string>
+    <string name="weather">Partly Sunny</string>
+    <string name="sunset">SUNSET</string>
+    <string name="wind">WIND</string>
+    <string name="temperature">TEMPERATURE</string>
+</resources>
