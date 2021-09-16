@@ -6,30 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Wednesday extends AppCompatActivity {
 
-    ImageView imageViewMon,imageViewTue,imageViewWed,imageViewThu;
+    ImageView imageViewLeft,imageViewRight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wednesday);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-        imageViewMon=findViewById(R.id.imageViewMon);
-        imageViewTue=findViewById(R.id.imageViewTue);
-        imageViewWed=findViewById(R.id.imageViewWed);
-        imageViewThu=findViewById(R.id.imageViewThu);
 
-        imageViewMon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Wednesday.this,Monday.class);
-                startActivity(intent);
-            }
-        });
+        imageViewLeft=findViewById(R.id.imageViewLeft);
+        imageViewRight=findViewById(R.id.imageViewRight);
 
-        imageViewTue.setOnClickListener(new View.OnClickListener() {
+        imageViewLeft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Wednesday.this,MainActivity.class);
@@ -37,12 +29,13 @@ public class Wednesday extends AppCompatActivity {
             }
         });
 
-        imageViewThu.setOnClickListener(new View.OnClickListener() {
+        imageViewRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Wednesday.this,Thursday.class);
                 startActivity(intent);
             }
         });
+
     }
 }

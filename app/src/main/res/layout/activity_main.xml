@@ -4,110 +4,209 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/nightsky"
+    android:background="#039BE5"
     tools:context=".MainActivity">
 
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h44"
+        android:id="@+id/h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.44" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h20"
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h10"
+        android:id="@+id/h1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1"/>
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h82"
+        android:id="@+id/h7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.82" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h60"
+        android:id="@+id/h8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.54" />
+        app:layout_constraintGuide_percent="0.68" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline16"
+        android:id="@+id/h9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
+        app:layout_constraintGuide_percent="0.78"/>
+
+    <TextView
+        android:id="@+id/textViewMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29°"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v90"
+        app:layout_constraintStart_toStartOf="@+id/v70"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxTempText" />
+
+    <TextView
+        android:id="@+id/textViewMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27°"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v30"
+        app:layout_constraintStart_toStartOf="@+id/v10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMinTempText" />
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v90"
+        app:layout_constraintStart_toStartOf="@+id/v70"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidityText" />
+
+    <TextView
+        android:id="@+id/textViewMaxTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAX TEMP"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/v90"
+        app:layout_constraintStart_toStartOf="@+id/v70"
+        app:layout_constraintTop_toTopOf="@+id/h8" />
+
+    <TextView
+        android:id="@+id/textViewPressureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESSURE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/v30"
+        app:layout_constraintStart_toStartOf="@+id/v10"
+        app:layout_constraintTop_toTopOf="@+id/h7" />
+
+    <TextView
+        android:id="@+id/textViewHumidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUMIDITY"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/v90"
+        app:layout_constraintStart_toStartOf="@+id/v70"
+        app:layout_constraintTop_toTopOf="@+id/h7" />
+
+    <TextView
+        android:id="@+id/textViewPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1008"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v30"
+        app:layout_constraintStart_toStartOf="@+id/v10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPressureText" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1"/>
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.3"/>
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"/>
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v70"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7"/>
+        app:layout_constraintGuide_percent="0.7" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.27" />
+        app:layout_constraintGuide_percent="0.9" />
 
     <TextView
-        android:id="@+id/textViewlocation"
+        android:id="@+id/textViewLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="@string/location"
+        android:text="Mumbai"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/v70"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="@+id/v30"
-        app:layout_constraintTop_toTopOf="@+id/h10" />
+        app:layout_constraintTop_toTopOf="@+id/h1" />
 
     <TextView
-        android:id="@+id/textViewdate"
+        android:id="@+id/textViewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="28°"
+        android:textColor="#FFFFFF"
+        android:textSize="102sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v90"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/v30"
+        app:layout_constraintTop_toTopOf="@+id/h3" />
+
+    <TextView
+        android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/date"
@@ -116,170 +215,96 @@
         app:layout_constraintEnd_toStartOf="@+id/v90"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/v10"
-        app:layout_constraintTop_toTopOf="@+id/h20" />
-
-    <TextView
-        android:id="@+id/textViewtemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/temp"
-        android:textColor="@color/white"
-        android:textSize="100sp"
-        app:layout_constraintEnd_toStartOf="@+id/v70"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/v30"
-        app:layout_constraintTop_toTopOf="@+id/h27" />
+        app:layout_constraintTop_toTopOf="@+id/h2" />
 
     <TextView
         android:id="@+id/textViewWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/weather"
+        android:text="Haze"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/v70"
         app:layout_constraintStart_toStartOf="@+id/v30"
-        app:layout_constraintTop_toTopOf="@+id/h44" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sunset"
+        android:text="TIME"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/v30"
         app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintStart_toStartOf="@+id/v10"
-        app:layout_constraintTop_toTopOf="@+id/h60" />
+        app:layout_constraintTop_toTopOf="@+id/h5" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewWind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/wind"
         android:textColor="#FFFEFE"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/v90"
         app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="@+id/v70"
-        app:layout_constraintTop_toTopOf="@+id/h60" />
+        app:layout_constraintTop_toTopOf="@+id/h5" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="17:21"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/v30"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="@+id/v10"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
+        android:id="@+id/textViewWindSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="8kmph"
         android:textColor="#FAF9F9"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/v90"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="@+id/v70"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWind" />
 
-    <ImageView
-        android:id="@+id/imageViewMon"
+    <TextView
+        android:id="@+id/textViewMinTempText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/h82"
+        android:text="MIN TEMP"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/v30"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/v10"
-        app:srcCompat="@mipmap/sun" />
+        app:layout_constraintTop_toTopOf="@+id/h8" />
 
     <ImageView
-        android:id="@+id/imageViewThu"
+        android:id="@+id/imageViewLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/h82"
-        app:layout_constraintEnd_toStartOf="@+id/v90"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/v70"
-        app:srcCompat="@mipmap/cloud" />
-
-    <ImageView
-        android:id="@+id/imageViewWed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/h82"
-        app:layout_constraintEnd_toStartOf="@+id/v70"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toStartOf="@+id/v50"
-        app:srcCompat="@mipmap/rain" />
-
-    <ImageView
-        android:id="@+id/imageViewTue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/h82"
-        app:layout_constraintEnd_toStartOf="@+id/v50"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/v30"
-        app:srcCompat="@mipmap/partialsun" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MON"
-        android:textColor="#FFFEFE"
-        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/v30"
-        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="@+id/v10"
-        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+        app:layout_constraintTop_toTopOf="@+id/h9"
+        app:srcCompat="@mipmap/leftarroww" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <ImageView
+        android:id="@+id/imageViewRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="THU"
-        android:textColor="#FFFEFE"
-        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/v90"
-        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="@+id/v70"
-        app:layout_constraintTop_toTopOf="@+id/guideline16" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WED"
-        android:textColor="#FEFEFE"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/v70"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/v50"
-        app:layout_constraintTop_toTopOf="@+id/guideline16" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TUE"
-        android:textColor="#FBFBFB"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/v50"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="@+id/v30"
-        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+        app:layout_constraintTop_toTopOf="@+id/h9"
+        app:srcCompat="@mipmap/rightarrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

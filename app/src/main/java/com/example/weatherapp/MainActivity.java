@@ -6,32 +6,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageViewMon,imageViewTue,imageViewWed,imageViewThu;
+    ImageView imageViewLeft,imageViewRight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-        imageViewMon=findViewById(R.id.imageViewMon);
-        imageViewTue=findViewById(R.id.imageViewTue);
-        imageViewWed=findViewById(R.id.imageViewWed);
-        imageViewThu=findViewById(R.id.imageViewThu);
 
-        imageViewMon.setOnClickListener(new View.OnClickListener() {
+        imageViewLeft=findViewById(R.id.imageViewLeft);
+        imageViewRight=findViewById(R.id.imageViewRight);
+
+        imageViewLeft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Monday.class);
                 startActivity(intent);
-
-
             }
         });
 
-        imageViewWed.setOnClickListener(new View.OnClickListener() {
+        imageViewRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Wednesday.class);
@@ -39,12 +46,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        imageViewThu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Thursday.class);
-                startActivity(intent);
-            }
-        });
     }
 }
+
